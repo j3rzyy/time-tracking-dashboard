@@ -48,7 +48,7 @@ body {
   align-items: center;
 }
 
-.dashboard_content {
+.dashboard__content {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
@@ -59,7 +59,7 @@ body {
   grid-template-columns: repeat(1, minmax(300px, 330px));
 }
 
-.dashboard_person {
+.dashboard__person {
   width: 100%;
   background-color: var(--blue-800);
   border-radius: var(--radii);
@@ -76,20 +76,20 @@ body {
   gap: 1rem;
 }
 
-.info-card_photo {
+.info-card__photo {
   width: 50px;
   height: 50px;
   border: solid 3px white;
   border-radius: var(--radii-ful);
 }
 
-.info-card_subtitle {
+.info-card__subtitle {
   font-weight: var(--weight-light);
   margin: 0;
   font-size: 12px;
 }
 
-.info-card_title {
+.info-card__title {
   font-weight: var(--weight-light);
   margin: 0.5rem 0 0;
 }
@@ -100,13 +100,88 @@ body {
   justify-content: space-between;
 }
 
-.view-selector_item {
+.view-selector__item {
   font-size: 12px;
   color: var(--blue-200);
   cursor: pointer;
 }
 
-.view-selector_item:hover,
-.view-selector_item--active {
+.view-selector__item:hover,
+.view-selector__item--active {
   color: white;
+}
+
+.dashboard__item {
+  width: 100%;
+  padding-top: 2.15rem;
+  background-color: white;
+  border-radius: var(--radii);
+
+  background-repeat: no-repeat;
+  background-position: 92% -8%;
+}
+
+.dashboard__item--work {
+  background-color: var(--red-100);
+  background-image: url(images/icon-work.svg);
+}
+.dashboard__item--play {
+  background-color: var(--blue-100);
+  background-image: url(images/icon-play.svg);
+}
+.dashboard__item--study {
+  background-color: var(--red-200);
+  background-image: url(images/icon-study.svg);
+}
+.dashboard__item--exercise {
+  background-color: var(--green-100);
+  background-image: url(images/icon-exercise.svg);
+}
+.dashboard__item--social {
+  background-color: var(--violet-500);
+  background-image: url(images/icon-social.svg);
+}
+.dashboard__item--self-care {
+  background-color: var(--orange-100);
+  background-image: url(images/icon-self-care.svg);
+}
+
+.tracking-card {
+  background-color: var(--blue-800);
+  border-radius: var(--radii);
+
+  padding: 1.25rem;
+  position: relative;
+  bottom: -2px;
+}
+
+.tracking-card__header,
+.tracking-card__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tracking-card__menu {
+  cursor: pointer;
+}
+
+.tracking-card:hover {
+  background-color: var(--blue-500);
+}
+
+.tracking-card__title {
+  font-weight: var(--weight-normal);
+  font-size: var(--fs-base);
+}
+
+.tracking-card__time {
+  font-size: 32px;
+  font-weight: var(--weight-light);
+}
+
+.tracking-card__prev-period {
+  font-size: 12px;
+  font-weight: var(--weight-light);
+  color: var(--blue-200);
 }
