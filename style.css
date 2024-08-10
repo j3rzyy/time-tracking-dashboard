@@ -30,6 +30,11 @@
   --radii-ful: 50%;
 }
 
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
 body {
   margin: 0;
   background-color: var(--blue-900);
